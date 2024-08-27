@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function f1()
+{
+var stm=document.getElementById("txt1").value;
+var stm1=document.getElementById("txt2").value;
+var stm2=document.getElementById("txt3").value;
+var stm3=parseInt(stm1);
+var stm4=parseInt(stm2);
+var d=stm.substring(stm1,stm2);
+document.write(d);
+}
+</script>
+</head>
+<body>
+<form>
+1.<input type="text" id="txt2"><br>
+2.<input type="text" id="txt3">
+<input type="text" id="txt1">
+<input type="button" onclick="f1()">
+</form>
+</body>
+</html>

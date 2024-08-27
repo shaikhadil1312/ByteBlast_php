@@ -1,0 +1,51 @@
+<html>
+<head>
+<script>
+function f1()
+{
+var echo=document.getElementById("txt").value;
+var a=echo.indexOf(")");
+var b=a-1;
+var b1=echo.indexOf(",");
+var b2=b1+2;
+var c=echo.substring(b2,b);
+var c1=c.length;
+var c2=c1-1;
+var c3=c2-1;
+var c4=c.substr(0,c1);
+var c5=c4.length;
+var c6=c5-1;
+var c7=c5-2;
+var stm=document.getElementById("txt1").value;
+var d=stm.length;
+var d1=d-1;
+var r=0;
+for(i=0;i<=d1;i++)
+{
+if(stm.charAt(i)==c.charAt(0))
+{
+var d2=stm.substr(i,c1);
+var d3=d2.length;
+var d4=d3-1;
+var d5=d3-2;
+if(c4==d2)
+{
+if(c5==d3)
+{
+r++;
+}
+}
+}
+}
+document.write(r);
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="txt1">
+<input type="text" id="txt">
+<input type="button" onclick="f1()">
+</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function f1()
+{
+var stm=document.getElementById("txt1").value;
+var d=stm.length;
+var d1=d-1;
+var r=0;
+var d9=" ";
+for(i=0;i<=d1;i++)
+{
+if(stm.charAt(i)==d9)
+{
+var d2=i+1;
+var d21=i+2;
+var d22=stm.charAt(0);
+var d23=d22.toUpperCase();
+var d3=stm.charAt(d2);
+var d4=d3.toUpperCase();
+var d5=stm.substring(1,d2);
+var d6=stm.substring(d21,d);
+stm=d23+d5+d4+d6;
+}
+}
+document.write(stm);
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="txt1">
+<input type="button" onclick="f1()">
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function f1()
+{
+echo=document.getElementById("revsti").value;
+var a1,a2;
+a1=echo.length;
+a2=a1-1;
+for(i=a2;i>=0;i--)
+{
+var b=echo.charAt(i);
+document.write(b);
+}
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="revsti">
+<input type="button" onclick="f1()">
+</form>
+</body>
+</html>

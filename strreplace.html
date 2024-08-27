@@ -1,0 +1,99 @@
+<html>
+<head>
+<script>
+function f1()
+{
+var echo=document.getElementById("txt").value;
+var a=echo.indexOf(")");
+var b=a-1;
+var b1=echo.indexOf(",");
+var b11=echo.lastIndexOf(",");
+var b12=b11+1;
+var b2=b1+2;
+var c=echo.substring(b2,b);
+var c112=echo.substring(b2,b11);
+var c1112=c112.length;
+var c1113=c1112-1;
+var c121=echo.charAt(c1113);
+var c11=echo.substring(b12,b);
+var v=c11.length;
+var c13=c11.length;
+var c1=c.length;
+var c2=c1-1;
+var c3=c2-1;
+var c4=c.substr(0,c1);
+var c5=c4.length;
+var c6=c5-1;
+var c7=c5-2;
+var stm=document.getElementById("txt1").value+" ";
+var d=stm.length;
+var d12=d+1;
+var d1=d-1;
+var stm5=stm.charAt(d1);
+var r=0;
+var stm1=" ";
+var stm2=stm+stm1;
+for(i=0;i<=d1;i++)
+{
+if(stm.charAt(i)==c112.charAt(0))
+{
+var d2=stm.substr(i,c1112);
+var d21=stm.substring(0,i);
+var d22=d21.length;
+var d221=d22+c13;
+var d2221=d221-1;
+var d3=d2.length;
+var d311=d3-1;
+var d31=d22+d3;
+var d32=stm.substring(d31,d12);
+var v1=d32.length;
+var d4=d3-1;
+var d5=d3-2;
+/*
+alert(stm2);			//1
+alert(stm.charAt(i));	//2
+alert(b12);				//3
+alert(d2);				//4
+alert(d3);*/			//5
+alert(d21);				//6
+alert(c11);				//7
+alert(d32);				//8
+/*alert(v1);				//13
+alert(c112);			//9
+alert(c1112);			//10
+alert(d3);				//11
+alert(v);*/	//12
+if(c112==d2)
+{
+alert("done");
+if(c1112=d3)
+{
+stm=d21+c11+d32;
+}
+}
+}
+}
+var p=stm.length-1;
+var p1=stm.charAt(p);
+var p2=stm.substring(0,p);
+if(p1==" ")
+{
+document.write(p2);
+document.write(p2.length);
+}
+else
+{
+document.write(stm);
+document.write(stm.length);
+}
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="txt1" value="">
+<input type="text" id="txt" value="">
+<input type="button" onclick="f1()">
+</form>
+</body>
+</html>
